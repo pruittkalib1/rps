@@ -15,9 +15,12 @@ def play():
         if userinput not in options:
             print("Pick a real one, my guy.")
             continue
-
+        
+        print(f"you chose: {userinput}")
         comp = random.choice(options)
         print(f"Computer chooses: {comp}")
+
+        
 
         if userinput == comp:
             print("It's a draw.")
